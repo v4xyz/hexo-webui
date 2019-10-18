@@ -1,5 +1,6 @@
 module.exports = app => {
   app.namespace('api', api => {
+    console.log('apiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii---------------->')
     api.resources('posts', {controller: 'posts', only: ['index', 'show', 'create']});
 
     api.namespace('files', files => {
