@@ -18,7 +18,7 @@ exports.index = [validators.index, (req, res, next) => {
         obj[key] = item[key];
       }
       return obj;
-    }, {}););
+    }, {}));
   }
 
   res.json({

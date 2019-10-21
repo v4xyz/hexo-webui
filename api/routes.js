@@ -9,7 +9,7 @@ module.exports = app => {
       files.delete('*', 'files#destroy');
     });
 
-    api.resources('scaffolds', {controller: 'scaffolds', except: ['new', 'edit']});
+    // api.resources('scaffolds', {controller: 'scaffolds', except: ['new', 'edit']});
 
     api.get('files', 'files#show');
     api.post('files', 'files#save');
